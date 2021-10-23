@@ -1,0 +1,24 @@
+// FONT FAMILY
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+$primaryFont: 'Poppins', sans-serif;
+$weight500: 500;
+$weight700: 700;
+
+
+// COLORS
+
+$very-dark-blue: hsla(255, 11%, 22%, 1);
+$dark-violet: hsla(257, 27%, 26%, 1);
+$violet: hsla(257, 26%, 33%, 1);
+$greyish-violet: hsla(257, 8%, 63%, 1);
+$greyish-light: hsla(225, 32%, 95%, 1);
+$light-blue: hsla(180, 66%, 49%, 1);
+
+// widths
+
+$maxWidth: 1440px;  // container width
+$rowWidth: 1110px;  // row width
+$minWidth: 375px;
+$tabletMax: 1024px;
+$tabletMin: 768px;

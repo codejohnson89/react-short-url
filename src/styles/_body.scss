@@ -1,0 +1,19 @@
+body {
+    font-family: $primaryFont;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 80px;
+    color: $very-dark-blue;
+}
+
+.container {    
+    max-width: $maxWidth;
+    margin: 0 auto;
+}
+
+.row {
+    max-width: $rowWidth;
+    margin: 0 auto;
+}

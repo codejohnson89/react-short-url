@@ -1,0 +1,83 @@
+.navbar {
+    margin: 48px 0;
+    .container {
+        padding: 0px;
+
+        .navbar-brand {
+            margin-right: 45px;
+        }
+
+        .navbar-collapse {
+            .navbar-nav {
+                font-weight: bold;
+                font-style: normal;
+                font-size: 15px;
+                line-height: 22px;
+                &:hover {
+                    color: $very-dark-blue;
+                }
+               
+            }
+            .navbar-nav.me-auto {
+                width: 256px;
+                display: flex;
+                justify-content: space-between;
+
+                a {
+                    font-weight: bold;
+                    font-style: normal;
+                    font-size: 15px;
+                    line-height: 22px;
+
+                }
+
+                @media only screen and (max-width: 991px) {
+                    width: 100%;
+                }
+            }
+
+            .signup {
+                color: #fff;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 22px;
+                background: $light-blue;
+                border-radius: 28px;
+                width: 105px;
+                text-align: center;
+                margin-left: 37px;
+            }
+
+            @media only screen and (max-width: 991px) {
+                background-color: $dark-violet;
+                border-radius: 10px;
+                flex-direction: column;
+                justify-content: space-evenly;
+                height: 383px;
+                .navbar-nav {
+                    align-items: center;
+                    .nav-link {
+                    color: #fff;
+                    }
+                }
+                .signup {
+                    width: 279px;
+                    margin-left: 0px;
+                }
+                .dropdown-divider {
+                    margin: 0 auto;
+                    width: 90%;
+                    height: 1px;
+                    background-color: white;
+                }
+            }
+        }
+
+        .navbar-collapse.show {
+            @media only screen and (max-width: 991px) {
+            display: flex;
+            }
+        }
+    }
+}
