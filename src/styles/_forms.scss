@@ -23,6 +23,9 @@
                 background: #2BD0D0;
                 border-radius: 10px;
                 border: none;
+                &:hover {
+                    background-color: #9AE3E3;
+                }
             }
         }
     }
@@ -39,12 +42,19 @@
             align-items: center;
             background: #FFFFFF;
             border-radius: 5px;
-            height: 72px;
+            min-height: 72px;
             padding: 0 1em;
             margin: 24px auto 0;
             max-width: 1110px;
             @media only screen and (max-width: 991px) {
                 flex-direction: column;
+                margin-top: 1em;
+                .right {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1em;
+                    margin: 1em 0 1em;
+                }
             }
         }
     }
@@ -76,7 +86,7 @@
     color: #fff;
     margin-left: 24px;
     min-width: 100px;
-    &::hover {
+    &:hover {
         background-color: #3A3054;
     }
 }
