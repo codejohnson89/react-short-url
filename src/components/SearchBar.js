@@ -24,6 +24,8 @@ const SearchBar = () => {
     
     const onSubmit = (data) => {
         GetShortCode(data.siteUrl);
+        var searchItem = document.getElementById('searchItem');
+        searchItem.value = '';
     };
     
 
@@ -33,7 +35,7 @@ const SearchBar = () => {
             <Form onSubmit={handleSubmit(onSubmit)}>
                 <Row>
                     <Col sm={12} md={9}>
-                        <Form.Control {...register("siteUrl", { required: true})} type="text" placeholder="Shorten a link here..." />
+                        <Form.Control {...register("siteUrl", { required: true})} id="searchItem" type="text" placeholder="Shorten a link here..." />
                         {errors.siteUrl && <span>Please add a link</span>}
                     </Col>
                     <Col sm={12} md={3}>
